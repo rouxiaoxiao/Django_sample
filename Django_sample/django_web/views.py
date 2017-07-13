@@ -4,6 +4,12 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request,'index.html')
+    context ={
+        'title':'Just a title',
+        'des':'Just a description',
+        'score':'1.0'
+
+    }
+    return render(request,'index.html',context)
 
 
